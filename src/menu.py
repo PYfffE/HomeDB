@@ -1,5 +1,5 @@
 
-from os import system
+import src.database as db
 
 
 def go_menu():
@@ -15,16 +15,16 @@ def go_menu():
         """)
 
         action = input('Выберите действие.. ')
+        print()
 
         if action == '1':
-            pass
+            db.interactive_put()
         elif action == '2':
-            pass
+            db.get_all()
         elif action == '3':
             pass
         elif action == '0':
             print('Выход')
         else:
             print('Неверный ввод. Повторите попытку')
-
         print()
