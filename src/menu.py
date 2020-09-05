@@ -1,5 +1,6 @@
 
-import src.database as db
+import database as db
+
 
 # show console menu and do actions
 def go_menu():
