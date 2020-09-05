@@ -1,7 +1,7 @@
 
 import src.database as db
 
-
+# show console menu and do actions
 def go_menu():
     action = '-1'
 
@@ -22,7 +22,7 @@ def go_menu():
         elif action == '2':
             db.get_all()
         elif action == '3':
-            pass
+            db.interactive_search()
         elif action == '0':
             print('Выход')
         else:
