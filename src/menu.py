@@ -12,18 +12,21 @@ def go_menu():
         1) Добавить запись
         2) Просмотр записей
         3) Поиск
+        4) Добавить пользователя
         0) Выход
         """)
 
         action = input('Выберите действие.. ')
-        print()
+        # print()
 
         if action == '1':
-            db.interactive_put()
+            db.interactive_put_item()
         elif action == '2':
             db.get_all()
         elif action == '3':
             db.interactive_search()
+        elif action == '4':
+            db.interactive_put_user()
         elif action == '0':
             print('Выход')
         else:
